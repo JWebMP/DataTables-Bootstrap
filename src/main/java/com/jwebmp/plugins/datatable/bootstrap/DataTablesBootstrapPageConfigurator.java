@@ -17,8 +17,8 @@
 package com.jwebmp.plugins.datatable.bootstrap;
 
 import com.jwebmp.core.*;
-import com.jwebmp.core.base.angular.services.annotations.*;
-import com.jwebmp.core.base.angular.services.annotations.angularconfig.*;
+import com.jwebmp.core.base.angular.client.annotations.angularconfig.*;
+import com.jwebmp.core.base.angular.client.annotations.typescript.*;
 import com.jwebmp.core.plugins.*;
 import com.jwebmp.core.services.*;
 import jakarta.validation.constraints.*;

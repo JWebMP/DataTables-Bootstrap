@@ -1,7 +1,8 @@
 package com.jwebmp.plugins.datatable.bootstrap;
 
-import com.jwebmp.core.base.angular.services.annotations.*;
-import com.jwebmp.core.base.angular.services.interfaces.*;
+
+import com.jwebmp.core.base.angular.client.annotations.angular.*;
+import com.jwebmp.core.base.angular.client.services.interfaces.*;
 
 @NgDataType
 public class DTData implements INgDataType<DTData>

@@ -1,7 +1,7 @@
 package com.jwebmp.plugins.datatable.bootstrap;
 
-import com.jwebmp.core.base.angular.services.annotations.*;
-import com.jwebmp.core.base.angular.services.annotations.references.*;
+import com.jwebmp.core.base.angular.client.annotations.angular.*;
+import com.jwebmp.core.base.angular.client.annotations.references.*;
 import com.jwebmp.core.base.html.*;
 
 @NgComponent("dt-bs-test")
@@ -17,7 +17,7 @@ public class DataTableBootstrapTest extends DataTableBootstrap<TableRow<?>, Data
 						.add(new TableHeaderCell<>("Cell 3"))
 				),
 				new DataTableDataServiceExample());
-		getBodyGroup().add(new TableRow<>().addAttribute("*ngFor", "let dd of data?.out")
+		getBodyGroup().add(new TableRow<>().addAttribute("*ngFor", "let dd of data")
 				.add(new TableCell<>("{{dd.name}}"))
 				.add(new TableCell<>("{{dd.name}}"))
 				.add(new TableCell<>("{{dd.name}}"))

@@ -1,5 +1,6 @@
 package com.jwebmp.plugins.datatable.bootstrap;
 
+import com.jwebmp.core.base.angular.client.services.interfaces.*;
 import com.jwebmp.core.base.html.*;
 import com.jwebmp.plugins.datatable.*;
 
@@ -10,7 +11,7 @@ public class DataTableBootstrap<T extends TableRow<?>, J extends DataTableBootst
 		super(id, headerGroup);
 	}
 	
-	public DataTableBootstrap(String id, TableHeaderGroup<?> headerGroup, DataTableDataService<?> dataService)
+	public DataTableBootstrap(String id, TableHeaderGroup<?> headerGroup, INgServiceProvider<?> dataService)
 	{
 		super(id, headerGroup, dataService);
 	}
