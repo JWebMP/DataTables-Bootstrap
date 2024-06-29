@@ -16,8 +16,6 @@
  */
 package com.jwebmp.plugins.datatable.bootstrap;
 
-import com.jwebmp.core.base.angular.client.annotations.angularconfig.NgScript;
-import com.jwebmp.core.base.angular.client.annotations.angularconfig.NgStyleSheet;
 import com.jwebmp.core.base.angular.client.annotations.typescript.TsDependency;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.PluginStatus;
@@ -32,29 +30,29 @@ import jakarta.validation.constraints.NotNull;
  * file://
  */
 @PluginInformation(pluginName = "Data Tables",
-        pluginUniqueName = "data-tables-bootstrap",
-        pluginDescription = "DataTables is a plug-in for the " +
-                "jQuery Javascript library. " +
-                "It is a highly flexible " +
-                "tool, based upon the " +
-                "foundations of progressive " +
-                "enhancement, and will add advanced interaction  controls  to any  HTML  table .",
-        pluginVersion = "1.10.22",
-        pluginDependancyUniqueIDs = "jquery,bootstrap",
-        pluginCategories = "jquery,datatables, tables, ui, " + "web, framework",
-        pluginSubtitle = "DataTables is very simple to use as a jQuery plug-in with a huge range of customisable option",
-        pluginGitUrl = "https://github.com/GedMarc/JWebMP-DataTablesPlugin",
-        pluginSourceUrl = "https://datatables" + "" + ".net/download/index",
-        pluginWikiUrl = "https://github.com/GedMarc/JWebMP-DataTablesPlugin/wiki",
-        pluginOriginalHomepage = "https://www.datatables.net/",
-        pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.forms/jwebmp-data-tables",
-        pluginIconUrl = "",
-        pluginIconImageUrl = "",
-        pluginLastUpdatedDate = "2021/09/05",
-        pluginGroupId = "com.jwebmp.plugins.forms",
-        pluginArtifactId = "jwebmp-data-tables-bootstrap",
-        pluginModuleName = "com.jwebmp.plugins.datatable",
-        pluginStatus = PluginStatus.Released
+                   pluginUniqueName = "data-tables-bootstrap",
+                   pluginDescription = "DataTables is a plug-in for the " +
+                           "jQuery Javascript library. " +
+                           "It is a highly flexible " +
+                           "tool, based upon the " +
+                           "foundations of progressive " +
+                           "enhancement, and will add advanced interaction  controls  to any  HTML  table .",
+                   pluginVersion = "1.10.22",
+                   pluginDependancyUniqueIDs = "jquery,bootstrap",
+                   pluginCategories = "jquery,datatables, tables, ui, " + "web, framework",
+                   pluginSubtitle = "DataTables is very simple to use as a jQuery plug-in with a huge range of customisable option",
+                   pluginGitUrl = "https://github.com/GedMarc/JWebMP-DataTablesPlugin",
+                   pluginSourceUrl = "https://datatables" + "" + ".net/download/index",
+                   pluginWikiUrl = "https://github.com/GedMarc/JWebMP-DataTablesPlugin/wiki",
+                   pluginOriginalHomepage = "https://www.datatables.net/",
+                   pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.forms/jwebmp-data-tables",
+                   pluginIconUrl = "",
+                   pluginIconImageUrl = "",
+                   pluginLastUpdatedDate = "2021/09/05",
+                   pluginGroupId = "com.jwebmp.plugins.forms",
+                   pluginArtifactId = "jwebmp-data-tables-bootstrap",
+                   pluginModuleName = "com.jwebmp.plugins.datatable",
+                   pluginStatus = PluginStatus.Released
 )
 @TsDependency(value = "datatables.net-bs5", version = "*")
 @TsDependency(value = "datatables.net-autofill-bs5", version = "*")
@@ -73,6 +71,8 @@ import jakarta.validation.constraints.NotNull;
 @TsDependency(value = "datatables.net-searchpanes-bs5", version = "*")
 @TsDependency(value = "datatables.net-select-bs5", version = "*")
 @TsDependency(value = "datatables.net-staterestore-bs5", version = "*")
+
+/*
 
 @NgScript("datatables.net-bs5/js/dataTables.bootstrap5.js")
 @NgStyleSheet("datatables.net-bs5/css/dataTables.bootstrap5.css")
@@ -120,6 +120,7 @@ import jakarta.validation.constraints.NotNull;
 
 @NgScript("datatables.net-staterestore-bs5/js/stateRestore.bootstrap5.js")
 @NgStyleSheet("datatables.net-staterestore-bs5/css/stateRestore.bootstrap5.css")
+*/
 
 public class DataTablesBootstrapPageConfigurator
         implements IPageConfigurator<DataTablesBootstrapPageConfigurator>

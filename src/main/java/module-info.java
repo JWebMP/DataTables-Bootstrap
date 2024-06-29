@@ -1,5 +1,7 @@
+import com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions;
 import com.jwebmp.core.services.IPageConfigurator;
 import com.jwebmp.plugins.datatable.bootstrap.DataTablesBootstrapPageConfigurator;
+import com.jwebmp.plugins.datatable.bootstrap.implementations.DataTablesBootstrapModuleInclusion;
 
 module com.jwebmp.plugins.datatable.bootstrap {
 
@@ -15,5 +17,6 @@ module com.jwebmp.plugins.datatable.bootstrap {
     opens com.jwebmp.plugins.datatable.bootstrap to com.google.guice;
 
     provides IPageConfigurator with DataTablesBootstrapPageConfigurator;
+    provides IGuiceScanModuleInclusions with DataTablesBootstrapModuleInclusion;
 
 }
